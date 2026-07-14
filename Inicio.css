@@ -1,0 +1,146 @@
+body {
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: rgb(43, 20, 20);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    gap: 1.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.contenedorHeader {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(43, 20, 20);
+    border-bottom: 4px solid gray;
+    border-radius: 0px 0px 20px 20px;
+    padding: 1.5rem 0;
+    gap: 0.6rem;
+}
+
+.contenedorTituloEslogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.contenedorTitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.4vw;
+}
+
+.titulo {
+    font-size: 1.8rem;
+    margin: 0px;
+}
+
+.adornoTitulo {
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.eslogan {
+    color: rgb(168, 140, 140);
+    margin: 0px;
+    font-size: 1.3rem;  
+    text-align: center;
+}
+
+.contenedorBotonesHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonHeader {
+    background-color: brown;
+    border-radius: 20px;
+    border: 3px solid black;
+    border-color: black gray;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+    font-size: 1rem;
+    padding: 6px 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonHeader:hover {
+    transform: scale(1.3);
+    border-color: gray black;
+}
+
+.botonHeader:active {
+    transform: scale(1.2);
+    border-color: black;
+}
+
+.contenedorMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(43, 20, 20);
+}
+
+.contenedorSecciones {
+    display: none;
+}
+
+.contenedorSecciones.on {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(160, 135, 135);
+    border: 4px solid rgb(199, 199, 199);
+    border-radius: 0px 30px 30px 30px;
+    padding: 0.4rem;
+    width: 85%;
+    transition: transform 1s ease, border-color 0.2s ease;
+}
+
+.contenedorSecciones:hover {
+    transform: scalex(1.04);
+    border-color: rgb(68, 68, 68);
+}
+
+.subtituloSeccion {
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    justify-content: center;
+    margin: 3vw 0px 1vw 0px;
+}
+
+img {
+    width: 50%;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 50px 10px black;
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+.indicadorImg {
+    text-align: center;
+    margin: 4rem 0px 2rem 0px;
+    padding: 2vw 10vw 0px 10vw;
+    border-top: 2px solid black;
+}
